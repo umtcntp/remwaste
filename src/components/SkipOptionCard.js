@@ -3,7 +3,6 @@ import React from 'react';
 function SkipOptionCard({ skip }) {
     const totalPrice = skip.price_before_vat + skip.vat;
 
-    // Boyuta göre görsel seç
     let imageSrc = '/images/skip_s.png';
     if (skip.size >= 15 && skip.size < 20) {
         imageSrc = '/images/skip_m.png';
@@ -13,7 +12,6 @@ function SkipOptionCard({ skip }) {
 
     return (
         <div className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
-            {/* Görsel */}
             <img
                 src={imageSrc}
                 alt={`${skip.size} yard skip`}
